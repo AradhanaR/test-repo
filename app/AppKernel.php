@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Sensio\Bundle\DistributionBundle\SensioDistributionBundle(),
+            new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
             new CodeExplorerBundle\CodeExplorerBundle(),
             new AppBundle\AppBundle(),
@@ -31,10 +33,10 @@ class AppKernel extends Kernel
         // when the application runs in 'dev' or 'test' environments. This allows
         // to increase application performance in the production environment.
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {
-            $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
-            $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
-            $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            //$bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
+            //$bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+            //$bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
+            //$bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 
         return $bundles;

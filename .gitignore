@@ -16,6 +16,3 @@
 !bin/console
 !bin/symfony_requirements
 /vendor/
-/web/bundles/
-.editorconfig
-.travis.yml
